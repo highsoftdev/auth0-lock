@@ -1,43 +1,61 @@
 {
-  "name": "auth0-lock",
-  "version": "11.16.3",
-  "description": "Auth0 Lock",
-  "author": "Auth0 <support@auth0.com> (http://auth0.com)",
-  "license": "MIT",
-  "keywords": [
-    "auth0",
-    "auth",
-    "openid",
-    "authentication",
-    "passwordless",
-    "browser",
-    "jwt"
+  "_from": "auth0-lock",
+  "_id": "auth0-lock@11.16.3",
+  "_inBundle": false,
+  "_integrity": "sha512-3Rjz8YxHucNC0wMsYHYOEZp1HXLM8ptRLr86dDvP2Kb/P7I2O2EVDEm3nUBzde/g3Od9JSbHTD4lRI0FJKcnow==",
+  "_location": "/auth0-lock",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "auth0-lock",
+    "name": "auth0-lock",
+    "escapedName": "auth0-lock",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/auth0/lock"
+  "_resolved": "https://registry.npmjs.org/auth0-lock/-/auth0-lock-11.16.3.tgz",
+  "_shasum": "6e6cff6daa9cbea4a8095f6684e6bcfc26ac48b6",
+  "_spec": "auth0-lock",
+  "_where": "/Users/mac/Desktop/uca_app",
+  "author": {
+    "name": "Auth0",
+    "email": "support@auth0.com",
+    "url": "http://auth0.com"
   },
-  "main": "lib/index.js",
-  "scripts": {
-    "start": "grunt dev",
-    "build": "grunt build",
-    "design": "grunt design",
-    "dev": "grunt dev",
-    "dist": "grunt dist",
-    "prepublish": "cross-env BABEL_ENV=npm grunt dist",
-    "precommit": "lint-staged",
-    "lint": "eslint --ext .jsx,.js src/",
-    "test": "cross-env BABEL_ENV=test zuul -- test/**/*.test.js",
-    "test:browser": "cross-env BABEL_ENV=test zuul --local 8080 --disable-tunnel -- test/**/*.test.js",
-    "test:cli": "cross-env BABEL_ENV=test mochify --extension=.jsx --transform=babelify ./test/setup.js test/**/*.test.js",
-    "test:watch": "cross-env BABEL_ENV=test mochify --watch --extension=.jsx --transform=babelify ./test/setup.js test/**/*.test.js",
-    "test:jest": "jest --coverage --runInBand",
-    "test:jest:watch": "jest --watch --coverage",
-    "test:es-check": "es-check es5 'build/*.js'",
-    "publish:cdn": "ccu --trace",
-    "release": "scripts/release.sh",
-    "i18n:translate": "grunt dist && node scripts/complete-translations.js"
+  "bugs": {
+    "url": "https://github.com/auth0/lock/issues"
   },
+  "bundleDependencies": false,
+  "cdn-component": {
+    "name": "lock",
+    "cdn": "https://cdn.auth0.com",
+    "mainBundleFile": "lock.min.js",
+    "bucket": "assets.us.auth0.com",
+    "localPath": "build"
+  },
+  "dependencies": {
+    "auth0-js": "^9.10.4",
+    "auth0-password-policies": "^1.0.2",
+    "blueimp-md5": "2.3.1",
+    "immutable": "^3.7.3",
+    "jsonp": "^0.2.1",
+    "password-sheriff": "^1.1.0",
+    "prop-types": "^15.6.0",
+    "qs": "^6.7.0",
+    "react": "^15.6.2",
+    "react-dom": "^15.6.2",
+    "react-transition-group": "^2.2.1",
+    "trim": "0.0.1",
+    "url-join": "^1.1.0"
+  },
+  "deprecated": false,
+  "description": "Auth0 Lock",
   "devDependencies": {
     "babel-core": "^6.17.0",
     "babel-eslint": "^7.2.2",
@@ -50,7 +68,7 @@
     "babel-preset-stage-0": "^6.3.13",
     "babelify": "^7.2.0",
     "bump-version": "^0.5.0",
-    "component-cdn-uploader": "auth0/component-cdn-uploader#v2.2.1",
+    "component-cdn-uploader": "github:auth0/component-cdn-uploader#v1.3.0",
     "cross-env": "^3.1.4",
     "css-loader": "^0.26.1",
     "dotenv": "^4.0.0",
@@ -93,37 +111,7 @@
     "zuul": "3.10.1",
     "zuul-ngrok": "4.0.0"
   },
-  "dependencies": {
-    "@auth0/component-cdn-uploader": "auth0/component-cdn-uploader#v2.2.2",
-    "auth0-js": "https://github.com/highsoftdev/auth0.js.git",
-    "auth0-password-policies": "^1.0.2",
-    "blueimp-md5": "2.3.1",
-    "immutable": "^3.7.3",
-    "jsonp": "^0.2.1",
-    "password-sheriff": "^1.1.0",
-    "prop-types": "^15.6.0",
-    "qs": "^6.7.0",
-    "react": "^15.6.2",
-    "react-dom": "^15.6.2",
-    "react-transition-group": "^2.2.1",
-    "trim": "0.0.1",
-    "url-join": "^1.1.0"
-  },
-  "ccu": {
-    "name": "lock",
-    "cdn": "https://cdn.auth0.com",
-    "mainBundleFile": "lock.min.js",
-    "bucket": "assets.us.auth0.com",
-    "localPath": "build",
-    "digest": {
-      "hashes": [
-        "sha384"
-      ],
-      "extensions": [
-        ".js"
-      ]
-    }
-  },
+  "homepage": "https://github.com/auth0/lock#readme",
   "jest": {
     "modulePaths": [
       "<rootDir>/src/",
@@ -151,6 +139,16 @@
       "text-summary"
     ]
   },
+  "keywords": [
+    "auth0",
+    "auth",
+    "openid",
+    "authentication",
+    "passwordless",
+    "browser",
+    "jwt"
+  ],
+  "license": "MIT",
   "lint-staged": {
     "*.{js,jsx}": [
       "npm run lint"
@@ -159,5 +157,32 @@
       "prettier --write --print-width 100 --single-quote",
       "git add"
     ]
-  }
+  },
+  "main": "lib/index.js",
+  "name": "auth0-lock",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/auth0/lock.git"
+  },
+  "scripts": {
+    "build": "grunt build",
+    "design": "grunt design",
+    "dev": "grunt dev",
+    "dist": "grunt dist",
+    "i18n:translate": "grunt dist && node scripts/complete-translations.js",
+    "lint": "eslint --ext .jsx,.js src/",
+    "precommit": "lint-staged",
+    "prepublish": "cross-env BABEL_ENV=npm grunt dist",
+    "publish:cdn": "ccu",
+    "release": "scripts/release.sh",
+    "start": "grunt dev",
+    "test": "cross-env BABEL_ENV=test zuul -- test/**/*.test.js",
+    "test:browser": "cross-env BABEL_ENV=test zuul --local 8080 --disable-tunnel -- test/**/*.test.js",
+    "test:cli": "cross-env BABEL_ENV=test mochify --extension=.jsx --transform=babelify ./test/setup.js test/**/*.test.js",
+    "test:es-check": "es-check es5 'build/*.js'",
+    "test:jest": "jest --coverage --runInBand",
+    "test:jest:watch": "jest --watch --coverage",
+    "test:watch": "cross-env BABEL_ENV=test mochify --watch --extension=.jsx --transform=babelify ./test/setup.js test/**/*.test.js"
+  },
+  "version": "11.16.3"
 }
