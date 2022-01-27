@@ -575,10 +575,10 @@ atob@^2.1.1:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-auth0-js@^9.10.4:
+"auth0-js@https://github.com/highsoftdev/auth0.js.git":
   version "9.10.4"
-  resolved "https://registry.yarnpkg.com/auth0-js/-/auth0-js-9.10.4.tgz#1cccfa2bdb3ea1d001805f22a31c0a40c6ec9480"
-  integrity sha512-FKwwA0E9NDrn/MxCzeftA5wx6YCos9wINhuvXeFHDdx+Lis7ykR46kBXJF4+dYjDdC5QhQ7W0cAp6bBS5gS75Q==
+  uid d2c55cdbcd6de2bd01a17e08c13877f1004e595f
+  resolved "https://github.com/highsoftdev/auth0.js.git#d2c55cdbcd6de2bd01a17e08c13877f1004e595f"
   dependencies:
     base64-js "^1.2.0"
     idtoken-verifier "^1.2.0"
@@ -2142,9 +2142,9 @@ cache-base@^1.0.1:
     unset-value "^1.0.0"
 
 cached-path-relative@^1.0.0, cached-path-relative@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/cached-path-relative/-/cached-path-relative-1.0.2.tgz#a13df4196d26776220cc3356eb147a52dba2c6db"
-  integrity sha512-5r2GqsoEb4qMTTN9J+WzXfjov+hjxT+j3u5K+kIVNIwAd99DLCJE9pBIMP1qVeybV6JiijL385Oz0DcYxfbOIg==
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/cached-path-relative/-/cached-path-relative-1.1.0.tgz#865576dfef39c0d6a7defde794d078f5308e3ef3"
+  integrity sha512-WF0LihfemtesFcJgO7xfOoOcnWzY/QHR4qeDqV44jPU3HTI54+LnfXK3SA27AVVGCdZFgjjFFaqUA9Jx7dMJZA==
 
 caller-path@^0.1.0:
   version "0.1.0"
@@ -2584,8 +2584,9 @@ commondir@^1.0.1:
   resolved "https://registry.yarnpkg.com/commondir/-/commondir-1.0.1.tgz#ddd800da0c66127393cca5950ea968a3aaf1253b"
   integrity sha1-3dgA2gxmEnOTzKWVDqloo6rxJTs=
 
-component-cdn-uploader@auth0/component-cdn-uploader#v1.3.0:
+"component-cdn-uploader@github:auth0/component-cdn-uploader#v1.3.0":
   version "1.3.0"
+  uid db2000a7bf0ab581e8733eb1e072878c941acf7f
   resolved "https://codeload.github.com/auth0/component-cdn-uploader/tar.gz/db2000a7bf0ab581e8733eb1e072878c941acf7f"
   dependencies:
     chalk "^1.1.3"
