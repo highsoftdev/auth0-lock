@@ -79,7 +79,7 @@
     "eslint-config-prettier": "^2.6.0",
     "eslint-plugin-react": "^7.4.0",
     "expect.js": "^0.3.1",
-    "flat": "^2.0.1",
+    "flat": "^5.0.1",
     "grunt": "^0.4.5",
     "grunt-babel": "^6.0.0",
     "grunt-cli": "^0.1.13",
